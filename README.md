@@ -1,2 +1,2 @@
-Tic Tac Toe Game using Html, Css and JavaScript 
-[Play Now](https://dhananjaysable370.github.io/Tic-Tac-Toe/)
+Play the Tic Tac Toe game built with HTML, CSS, and JavaScript. 
+[Click below to start!](https://dhananjaysable370.github.io/Tic-Tac-Toe/)
