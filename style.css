@@ -38,13 +38,15 @@ h1 {
     height: 18vmin;
     width: 18vmin;
     /* border-radius: 1rem; */
-    border: 2px solid rgb(33, 54, 44);
+    border: 1.5px solid rgb(33, 54, 44);
     /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); */
     font-size: 8vmin;
     color: black;
     background-color: transparent;
+    transition: .1s ease-in;
 }
-.box:hover{
+
+.box:hover {
     background-color: rgb(149, 250, 240);
 }
 
