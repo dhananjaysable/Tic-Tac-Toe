@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetBtn = document.getElementById("reset-btn");
     const newGame = document.getElementById("new-game");
     const msgContainer = document.querySelector(".msg-container");
-    const turnSound = new Audio('mouse.mp3');
+    const turnSound = new Audio('pop-sound.mp3');
     const msg = document.getElementById("msg");
 
     let turnO = true;
