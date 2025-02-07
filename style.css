@@ -25,7 +25,7 @@ h1 {
 }
 
 .game {
-    height: 60vmin;
+    height: 70vmin;
     width: 60vmin;
     display: flex;
     flex-wrap: wrap;
@@ -35,8 +35,8 @@ h1 {
 }
 
 .box {
-    height: 18vmin;
-    width: 18vmin;
+    height: 20vmin;
+    width: 20vmin;
     /* border-radius: 1rem; */
     border: 1.5px solid rgb(33, 54, 44);
     /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); */
@@ -104,4 +104,15 @@ h1 {
 
 .bt-0 {
     border-top: 0;
+}
+
+
+@media (max-width:420px) {
+    .game{
+        padding: 18px 0;
+       
+    }
+    .msg-container{
+        height: 150vmin;
+    }
 }
