@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
         box.addEventListener('click', () => {
             if (!gameActive) return;
 
-            box.innerText = turnO ? "O" : "X";
             turnSound.play();
+            box.innerText = turnO ? "O" : "X";
             box.disabled = true;
             turnO = !turnO;
 
