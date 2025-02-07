@@ -11,17 +11,18 @@ body {
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 2rem;
     height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8vmin;
+    gap: 2rem;
 }
 
 h1 {
     color: white;
+    font-size: 2rem;
 }
 
 .game {
@@ -31,36 +32,23 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* gap: 2vmin; */
 }
 
 .box {
     height: 20vmin;
     width: 20vmin;
-    /* border-radius: 1rem; */
     border: 1.5px solid rgb(33, 54, 44);
-    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); */
-    font-size: 8vmin;
+    font-size: 10vmin;
     color: black;
     background-color: transparent;
-    transition: .1s ease-in;
+    transition: background-color 0.1s ease-in;
 }
 
 .box:hover {
     background-color: rgb(149, 250, 240);
 }
 
-#reset-btn {
-    padding: 1rem;
-    font-size: 1.2rem;
-    background-color: #134e4a;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
-    outline: none;
-    margin-top: 65px;
-}
-
+#reset-btn,
 #new-game {
     padding: 1rem;
     font-size: 1.2rem;
@@ -69,16 +57,20 @@ h1 {
     border-radius: 1rem;
     border: none;
     outline: none;
-    margin: 20px 0;
+    margin-top: 4.5rem;
+}
+
+#new-game {
+    margin-top: 1rem;
 }
 
 #msg {
     color: #ffffff;
-    font-size: 8vmin;
+    font-size: 2rem;
 }
 
 .msg-container {
-    height: 100vmin;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,13 +98,48 @@ h1 {
     border-top: 0;
 }
 
-
-@media (max-width:420px) {
-    .game{
-        padding: 18px 0;
-       
+@media (max-width: 768px) {
+    .container {
+        gap: 1.5rem;
     }
-    .msg-container{
-        height: 150vmin;
+
+    .game {
+        width: 80vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 21vmin;
+        font-size: 10vmin;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        gap: 1rem;
+    }
+
+    .game {
+        width: 90vmin;
+    }
+
+    .box {
+        height: 24vmin;
+        width: 23vmin;
+        font-size: 10vmin;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    #reset-btn,
+    #new-game {
+        font-size: 1.3rem;
+        padding: .9rem;
     }
 }
