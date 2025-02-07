@@ -12,12 +12,12 @@ body {
 
 .container {
     margin-top: 30px;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5vmin;
+    gap: 8vmin;
 }
 
 h1 {
@@ -31,18 +31,21 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2vmin;
+    /* gap: 2vmin; */
 }
 
 .box {
     height: 18vmin;
     width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    /* border-radius: 1rem; */
+    border: 2px solid rgb(33, 54, 44);
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); */
     font-size: 8vmin;
     color: black;
-    background-color: #ffffff;
+    background-color: transparent;
+}
+.box:hover{
+    background-color: rgb(149, 250, 240);
 }
 
 #reset-btn {
@@ -53,7 +56,7 @@ h1 {
     border-radius: 1rem;
     border: none;
     outline: none;
-    margin: 20px 0;
+    margin-top: 65px;
 }
 
 #new-game {
@@ -82,4 +85,21 @@ h1 {
 
 .hide {
     display: none;
+}
+
+/* Utility classes */
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
 }
